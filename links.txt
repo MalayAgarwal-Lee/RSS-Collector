@@ -34,21 +34,21 @@ Python
 	7. Extending Python 3 by writing modules in Go - https://www.reddit.com/r/Python/comments/7n0wwg/extending_python_3_by_writing_modules_in_go/
 	8. A Python IDE made with tkinter ... it should be cross-platform, but it was tested only on Linux Debian .... give it a try; feel free to make it better :) . ..... you can get the code on github.com - https://www.reddit.com/r/Python/comments/7murk2/a_python_ide_made_with_tkinter_it_should_be/
 	9. Proxy Rotation script that works with ProxyMesh - https://www.reddit.com/r/Python/comments/7n255r/proxy_rotation_script_that_works_with_proxymesh/
-	10. HOW TO CREATE COMPUTER GRAPHIC BY USING PYTHON -- HOW TO USE CLASS Turtl... - https://www.reddit.com/r/Python/comments/7n22kl/how_to_create_computer_graphic_by_using_python/
-	11. Building a simple Redis-like server in Python - https://www.reddit.com/r/Python/comments/7n1vu1/building_a_simple_redislike_server_in_python/
-	12. Python - C++ bindings - https://www.reddit.com/r/Python/comments/7n1v2r/python_c_bindings/
-	13. Get live news on your desktop - https://www.reddit.com/r/Python/comments/7n0zvu/get_live_news_on_your_desktop/
-	14. Charting Sunspots - Python/Bokeh viz. - https://www.reddit.com/r/Python/comments/7n0za7/charting_sunspots_pythonbokeh_viz/
-	15. [request] Python program to convert JSON to GeoJSON - https://www.reddit.com/r/Python/comments/7n1my3/request_python_program_to_convert_json_to_geojson/
-	16. strangeness with Pandas and multiprocessing - https://www.reddit.com/r/Python/comments/7n1lzb/strangeness_with_pandas_and_multiprocessing/
+	10. Building a simple Redis-like server in Python - https://www.reddit.com/r/Python/comments/7n1vu1/building_a_simple_redislike_server_in_python/
+	11. Python - C++ bindings - https://www.reddit.com/r/Python/comments/7n1v2r/python_c_bindings/
+	12. Get live news on your desktop - https://www.reddit.com/r/Python/comments/7n0zvu/get_live_news_on_your_desktop/
+	13. Charting Sunspots - Python/Bokeh viz. - https://www.reddit.com/r/Python/comments/7n0za7/charting_sunspots_pythonbokeh_viz/
+	14. [request] Python program to convert JSON to GeoJSON - https://www.reddit.com/r/Python/comments/7n1my3/request_python_program_to_convert_json_to_geojson/
+	15. strangeness with Pandas and multiprocessing - https://www.reddit.com/r/Python/comments/7n1lzb/strangeness_with_pandas_and_multiprocessing/
+	16. HOW TO CREATE COMPUTER GRAPHIC BY USING PYTHON -- HOW TO USE CLASS Turtl... - https://www.reddit.com/r/Python/comments/7n22kl/how_to_create_computer_graphic_by_using_python/
 	17. What is CPython? - https://www.reddit.com/r/Python/comments/7n14y2/what_is_cpython/
 	18. Loading .csv file using Pandas - https://www.reddit.com/r/Python/comments/7n11q0/loading_csv_file_using_pandas/
 	19. Newbie here! I want to learn python and my first goal is to write a Zork-like rpg game! - https://www.reddit.com/r/Python/comments/7myhpc/newbie_here_i_want_to_learn_python_and_my_first/
 	20. Has anyone automated a large portion of their daily tasks at work? If so, did you do it privately or did you let your boss know? - https://www.reddit.com/r/Python/comments/7mvzo1/has_anyone_automated_a_large_portion_of_their/
 	21. Pandas/Jupyter Notebook: Economic Analysis of Bitcoin (as of late 2016) and Correlation to Chinese Yuan - https://www.reddit.com/r/Python/comments/7myg18/pandasjupyter_notebook_economic_analysis_of/
-	22. Where's all the snakes? - https://www.reddit.com/r/Python/comments/7n1z6j/wheres_all_the_snakes/
-	23. Side project source control - https://www.reddit.com/r/Python/comments/7n02he/side_project_source_control/
-	24. Turtle module drawing a randomised landscape - https://www.reddit.com/r/Python/comments/7mo2l8/turtle_module_drawing_a_randomised_landscape/
+	22. Side project source control - https://www.reddit.com/r/Python/comments/7n02he/side_project_source_control/
+	23. Turtle module drawing a randomised landscape - https://www.reddit.com/r/Python/comments/7mo2l8/turtle_module_drawing_a_randomised_landscape/
+	24. Where's all the snakes? - https://www.reddit.com/r/Python/comments/7n1z6j/wheres_all_the_snakes/
 	25. How to bind Ctrl-a to Home in Jupyter Notebook? - https://www.reddit.com/r/Python/comments/7mzq1x/how_to_bind_ctrla_to_home_in_jupyter_notebook/
 	26. Is this "pythonic"? - https://www.reddit.com/r/Python/comments/7mzgpp/is_this_pythonic/
 	27. What python graphics package should I use to create something like this? - https://www.reddit.com/r/Python/comments/7mz6um/what_python_graphics_package_should_i_use_to/

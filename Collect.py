@@ -47,6 +47,7 @@ def mail(filename):
     password = 'MakingLifeEasier'
     subject = 'Your Python headlines for today!'
 
+    #constructing message
     message = MIMEMultipart()
     message['From'] = sender
     message['To'] = recipient
@@ -54,18 +55,21 @@ def mail(filename):
 
     attachment = open(filename, 'rb')
 
-    attachmentPart = MIMEBase('application', 'octet-string')
+    #constructing attachment
+    attachmentPart = MIMEBase('application', 'octet-stream')
     attachmentPart.set_payload(attachment.read())
     encoders.encode_base64(attachmentPart)
-    attachmentPart.add_header("News", 'attachment; filename = ' + filename)
+    attachmentPart.add_header('content-disposition', 'attachment', filename = filename)
 
     message.attach(attachmentPart)
     message = message.as_string()
 
+    #connecting to server
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login(sender, password)
 
+    #sending mail
     server.sendmail(sender, recipient, message)
     server.quit()
 
