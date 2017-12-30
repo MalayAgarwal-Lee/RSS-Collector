@@ -73,6 +73,7 @@ def main():
     links = compileLinks(urls)
     filename = compileFile(links)
     mail(filename)
+    print("Finished")
 
 if __name__ == '__main__':
     main()
