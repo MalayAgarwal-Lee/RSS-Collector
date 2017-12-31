@@ -1,55 +1,55 @@
 Planet Python
-	1. Codementor: How and why I built A polynomial library for python - https://www.codementor.io/arhur/how-and-why-i-built-a-polynomial-library-for-python-f9c594fl3
-	2. Python Software Foundation: Python Software Foundation Fellow Members for Q4 2017 - http://feedproxy.google.com/~r/PythonSoftwareFoundationNews/~3/VDG8bVB5hYc/python-software-foundation-fellow.html
-	3. Nikola: Nikola v7.8.11 is out! (maintenance release) - https://getnikola.com/blog/nikola-v7811-is-out-maintenance-release.html
-	4. Red Hat Developers: Create a scalable REST API with Falcon and RHSCL - https://developers.redhat.com/blog/2017/12/29/create-scalable-rest-api-falcon-rhscl/
-	5. Davy Wybiral: What do we do when machine learning catches up with our captchas? - http://davywybiral.blogspot.com/2017/12/what-do-we-do-when-machine-learning.html
-	6. Hynek Schlawack: Conditional Python Dependencies - https://hynek.me/articles/conditional-python-dependencies/
-	7. Codementor: Analyzing 1000+ Greek Wines With Python - https://www.codementor.io/florents/analyzing-1000-greek-wines-with-python-f7u7680xt
-	8. PyCharm: PyCharm 2017.3.2 Out Now - http://feedproxy.google.com/~r/Pycharm/~3/BCZtl0dq7Ig/
-	9. Programiz: Python Arrays - https://www.programiz.com/python-programming/array
-	10. Full Stack Python: The Full Stack Python Blog - https://www.fullstackpython.com/full-stack-python-blog.html
-	12. Semaphore Community: Writing, Testing, and Deploying a Django API to Heroku with Semaphore - https://semaphoreci.com/community/tutorials/writing-testing-and-deploying-a-django-api-to-heroku-with-semaphore
-	13. Carl Chenet: Testing Ansible Playbooks With Vagrant - https://carlchenet.com/testing-ansible-playbooks-with-vagrant/
-	14. Codementor: How to create a REST API in Python using the Flask Microframework - https://www.codementor.io/johnkagga/how-to-create-a-rest-api-in-python-using-the-flask-microframework-f75i77d0j
-	15. Greg Taylor: python-colormath 3.0.0 released - https://gc-taylor.com/blog/2017/12/27/python-colormath-300-released
-	16. Codementor: How to Build a Message Delivery Status in Django - https://www.codementor.io/samuelogundipe/how-to-build-a-message-delivery-status-in-django-f2r8hg7qy
-	17. Codementor: Integrating Travis CI and Codecov into a Python-based Project - https://www.codementor.io/parthshandilya/integrating-travis-ci-and-codecov-into-a-python-based-project-ez6e0tza6
-	18. Codementor: Deciding on a python web framework. - https://www.codementor.io/justmaffie/deciding-on-a-python-web-framework-f5xw93fya
-	19. Python Bytes: #58 Better cache decorators and another take on type hints - https://pythonbytes.fm/episodes/show/58/better-cache-decorators-and-another-take-on-type-hints
-	20. Talk Python to Me: #144 Machine Learning at the Large Hadron Collider - https://talkpython.fm/episodes/show/144/machine-learning-at-the-large-hadron-collider
-	21. PyPy Development: PyPy2.7 and PyPy3.5 v5.10 dual release - http://feedproxy.google.com/~r/PyPyStatusBlog/~3/I85dVLqj-kM/pypy27-and-pypy35-v510-dual-release.html
-	22. Import Python: #156: Tensorflow, Machine learning 101, Performant Web Application and more - http://importpython.com/blog/post/156-tensorflow-machine-learning-101-performant-web-application-and-more
-	23. Doug Hellmann: multiprocessing — Manage Processes Like Threads — PyMOTW 3 - http://feeds.doughellmann.com/~r/doughellmann/python/~3/wTfsf7EznsU/
-	24. Mike Driscoll: PyDev of the Week: Lynn Root - http://www.blog.pythonlibrary.org/2017/12/25/pydev-of-the-week-lynn-root/
-	25. Full Stack Python: Setting up PostgreSQL with Python 3 and psycopg on Ubuntu 16.04 - https://www.fullstackpython.com/postgresql-python-3-psycopg2-ubuntu-1604.html
+	1. Talk Python to Me: #145 2017 Python Year in Review - https://talkpython.fm/episodes/show/145/2017-python-year-in-review
+	2. Codementor: How and why I built A polynomial library for python - https://www.codementor.io/arhur/how-and-why-i-built-a-polynomial-library-for-python-f9c594fl3
+	3. Python Software Foundation: Python Software Foundation Fellow Members for Q4 2017 - http://feedproxy.google.com/~r/PythonSoftwareFoundationNews/~3/VDG8bVB5hYc/python-software-foundation-fellow.html
+	4. Nikola: Nikola v7.8.11 is out! (maintenance release) - https://getnikola.com/blog/nikola-v7811-is-out-maintenance-release.html
+	5. Red Hat Developers: Create a scalable REST API with Falcon and RHSCL - https://developers.redhat.com/blog/2017/12/29/create-scalable-rest-api-falcon-rhscl/
+	6. Davy Wybiral: What do we do when machine learning catches up with our captchas? - http://davywybiral.blogspot.com/2017/12/what-do-we-do-when-machine-learning.html
+	7. Hynek Schlawack: Conditional Python Dependencies - https://hynek.me/articles/conditional-python-dependencies/
+	8. Codementor: Analyzing 1000+ Greek Wines With Python - https://www.codementor.io/florents/analyzing-1000-greek-wines-with-python-f7u7680xt
+	9. PyCharm: PyCharm 2017.3.2 Out Now - http://feedproxy.google.com/~r/Pycharm/~3/BCZtl0dq7Ig/
+	10. Programiz: Python Arrays - https://www.programiz.com/python-programming/array
+	11. Full Stack Python: The Full Stack Python Blog - https://www.fullstackpython.com/full-stack-python-blog.html
+	13. Semaphore Community: Writing, Testing, and Deploying a Django API to Heroku with Semaphore - https://semaphoreci.com/community/tutorials/writing-testing-and-deploying-a-django-api-to-heroku-with-semaphore
+	14. Carl Chenet: Testing Ansible Playbooks With Vagrant - https://carlchenet.com/testing-ansible-playbooks-with-vagrant/
+	15. Codementor: How to create a REST API in Python using the Flask Microframework - https://www.codementor.io/johnkagga/how-to-create-a-rest-api-in-python-using-the-flask-microframework-f75i77d0j
+	16. Greg Taylor: python-colormath 3.0.0 released - https://gc-taylor.com/blog/2017/12/27/python-colormath-300-released
+	17. Codementor: How to Build a Message Delivery Status in Django - https://www.codementor.io/samuelogundipe/how-to-build-a-message-delivery-status-in-django-f2r8hg7qy
+	18. Codementor: Integrating Travis CI and Codecov into a Python-based Project - https://www.codementor.io/parthshandilya/integrating-travis-ci-and-codecov-into-a-python-based-project-ez6e0tza6
+	19. Codementor: Deciding on a python web framework. - https://www.codementor.io/justmaffie/deciding-on-a-python-web-framework-f5xw93fya
+	20. Python Bytes: #58 Better cache decorators and another take on type hints - https://pythonbytes.fm/episodes/show/58/better-cache-decorators-and-another-take-on-type-hints
+	21. Talk Python to Me: #144 Machine Learning at the Large Hadron Collider - https://talkpython.fm/episodes/show/144/machine-learning-at-the-large-hadron-collider
+	22. PyPy Development: PyPy2.7 and PyPy3.5 v5.10 dual release - http://feedproxy.google.com/~r/PyPyStatusBlog/~3/I85dVLqj-kM/pypy27-and-pypy35-v510-dual-release.html
+	23. Import Python: #156: Tensorflow, Machine learning 101, Performant Web Application and more - http://importpython.com/blog/post/156-tensorflow-machine-learning-101-performant-web-application-and-more
+	24. Doug Hellmann: multiprocessing — Manage Processes Like Threads — PyMOTW 3 - http://feeds.doughellmann.com/~r/doughellmann/python/~3/wTfsf7EznsU/
+	25. Mike Driscoll: PyDev of the Week: Lynn Root - http://www.blog.pythonlibrary.org/2017/12/25/pydev-of-the-week-lynn-root/
 
 Python
 	1. /r/Python official Job Board! - https://www.reddit.com/r/Python/comments/75jklc/rpython_official_job_board/
 	2. What's everyone working on this week? - https://www.reddit.com/r/Python/comments/7m7xmi/whats_everyone_working_on_this_week/
-	3. Python Cheet Sheet for begineers - https://www.reddit.com/r/Python/comments/7mwgtw/python_cheet_sheet_for_begineers/
-	4. A REAL Python cheat sheet for beginners - https://www.reddit.com/r/Python/comments/7n1c9u/a_real_python_cheat_sheet_for_beginners/
-	5. Ready to move into more advanced Python...ideas? - https://www.reddit.com/r/Python/comments/7n26cv/ready_to_move_into_more_advanced_pythonideas/
-	6. How Python Descriptors works - https://www.reddit.com/r/Python/comments/7n1ud6/how_python_descriptors_works/
-	7. Extending Python 3 by writing modules in Go - https://www.reddit.com/r/Python/comments/7n0wwg/extending_python_3_by_writing_modules_in_go/
-	8. A Python IDE made with tkinter ... it should be cross-platform, but it was tested only on Linux Debian .... give it a try; feel free to make it better :) . ..... you can get the code on github.com - https://www.reddit.com/r/Python/comments/7murk2/a_python_ide_made_with_tkinter_it_should_be/
-	9. Proxy Rotation script that works with ProxyMesh - https://www.reddit.com/r/Python/comments/7n255r/proxy_rotation_script_that_works_with_proxymesh/
-	10. Building a simple Redis-like server in Python - https://www.reddit.com/r/Python/comments/7n1vu1/building_a_simple_redislike_server_in_python/
-	11. Python - C++ bindings - https://www.reddit.com/r/Python/comments/7n1v2r/python_c_bindings/
-	12. Get live news on your desktop - https://www.reddit.com/r/Python/comments/7n0zvu/get_live_news_on_your_desktop/
-	13. Charting Sunspots - Python/Bokeh viz. - https://www.reddit.com/r/Python/comments/7n0za7/charting_sunspots_pythonbokeh_viz/
-	14. [request] Python program to convert JSON to GeoJSON - https://www.reddit.com/r/Python/comments/7n1my3/request_python_program_to_convert_json_to_geojson/
-	15. strangeness with Pandas and multiprocessing - https://www.reddit.com/r/Python/comments/7n1lzb/strangeness_with_pandas_and_multiprocessing/
-	16. HOW TO CREATE COMPUTER GRAPHIC BY USING PYTHON -- HOW TO USE CLASS Turtl... - https://www.reddit.com/r/Python/comments/7n22kl/how_to_create_computer_graphic_by_using_python/
-	17. What is CPython? - https://www.reddit.com/r/Python/comments/7n14y2/what_is_cpython/
-	18. Loading .csv file using Pandas - https://www.reddit.com/r/Python/comments/7n11q0/loading_csv_file_using_pandas/
-	19. Newbie here! I want to learn python and my first goal is to write a Zork-like rpg game! - https://www.reddit.com/r/Python/comments/7myhpc/newbie_here_i_want_to_learn_python_and_my_first/
-	20. Has anyone automated a large portion of their daily tasks at work? If so, did you do it privately or did you let your boss know? - https://www.reddit.com/r/Python/comments/7mvzo1/has_anyone_automated_a_large_portion_of_their/
-	21. Pandas/Jupyter Notebook: Economic Analysis of Bitcoin (as of late 2016) and Correlation to Chinese Yuan - https://www.reddit.com/r/Python/comments/7myg18/pandasjupyter_notebook_economic_analysis_of/
-	22. Side project source control - https://www.reddit.com/r/Python/comments/7n02he/side_project_source_control/
-	23. Turtle module drawing a randomised landscape - https://www.reddit.com/r/Python/comments/7mo2l8/turtle_module_drawing_a_randomised_landscape/
-	24. Where's all the snakes? - https://www.reddit.com/r/Python/comments/7n1z6j/wheres_all_the_snakes/
-	25. How to bind Ctrl-a to Home in Jupyter Notebook? - https://www.reddit.com/r/Python/comments/7mzq1x/how_to_bind_ctrla_to_home_in_jupyter_notebook/
-	26. Is this "pythonic"? - https://www.reddit.com/r/Python/comments/7mzgpp/is_this_pythonic/
-	27. What python graphics package should I use to create something like this? - https://www.reddit.com/r/Python/comments/7mz6um/what_python_graphics_package_should_i_use_to/
+	3. A REAL Python cheat sheet for beginners - https://www.reddit.com/r/Python/comments/7n1c9u/a_real_python_cheat_sheet_for_beginners/
+	4. Copy-on-write friendly Python garbage collection – Instagram Engineering - https://www.reddit.com/r/Python/comments/7n683c/copyonwrite_friendly_python_garbage_collection/
+	5. Pyfiddle v 1.1 released! - https://www.reddit.com/r/Python/comments/7n5ivo/pyfiddle_v_11_released/
+	6. Python Cheet Sheet for begineers - https://www.reddit.com/r/Python/comments/7mwgtw/python_cheet_sheet_for_begineers/
+	7. #PyCon 2016. Guido van Rossum the founder of Python programming language explained very beautifully why does python exists in the World today. - https://www.reddit.com/r/Python/comments/7n6wyo/pycon_2016_guido_van_rossum_the_founder_of_python/
+	8. NumScrypt, a small subset of NumPy for the browser, has now inverse and 1D/2D complex FFT and IFFT and a new, efficient engine based on JavaScript typed arrays. - https://www.reddit.com/r/Python/comments/7n3odl/numscrypt_a_small_subset_of_numpy_for_the_browser/
+	9. Check out this animation of Platonic solids I made using Python Imaging library (link to code included in the description) - https://www.reddit.com/r/Python/comments/7n6jow/check_out_this_animation_of_platonic_solids_i/
+	10. Showing custom 404 or 500 error page in Python Django app - https://www.reddit.com/r/Python/comments/7n6hfx/showing_custom_404_or_500_error_page_in_python/
+	11. Probably a dumb question... - https://www.reddit.com/r/Python/comments/7n6tjw/probably_a_dumb_question/
+	12. Getting conflicting answers in python - https://www.reddit.com/r/Python/comments/7n538a/getting_conflicting_answers_in_python/
+	13. How Python Descriptors works - https://www.reddit.com/r/Python/comments/7n1ud6/how_python_descriptors_works/
+	14. Python - C++ bindings - https://www.reddit.com/r/Python/comments/7n1v2r/python_c_bindings/
+	15. Determining file format using Python - https://www.reddit.com/r/Python/comments/7n4nzq/determining_file_format_using_python/
+	16. Do you actually do 4 spaces instead of tabbing? - https://www.reddit.com/r/Python/comments/7n5ude/do_you_actually_do_4_spaces_instead_of_tabbing/
+	17. Repetitive nested loops - trying to simplify code - https://www.reddit.com/r/Python/comments/7n5s84/repetitive_nested_loops_trying_to_simplify_code/
+	18. 2017 Python Year in Review [audio] - https://www.reddit.com/r/Python/comments/7n5rbw/2017_python_year_in_review_audio/
+	19. Speeding up the ImageGrab.grab() function in pillow - https://www.reddit.com/r/Python/comments/7n5bzp/speeding_up_the_imagegrabgrab_function_in_pillow/
+	20. Extending Python 3 by writing modules in Go - https://www.reddit.com/r/Python/comments/7n0wwg/extending_python_3_by_writing_modules_in_go/
+	21. Ready to move into more advanced Python...ideas? - https://www.reddit.com/r/Python/comments/7n26cv/ready_to_move_into_more_advanced_pythonideas/
+	22. My script makes many API calls, and it works just fine when I run it in PyCharm. When I run the script in command prompt, I get connection refusals and the message "Max tries exceeded with url". - https://www.reddit.com/r/Python/comments/7n4qxw/my_script_makes_many_api_calls_and_it_works_just/
+	23. Scraping with urllib3 and bs4 over tor - https://www.reddit.com/r/Python/comments/7n4lg3/scraping_with_urllib3_and_bs4_over_tor/
+	24. Proxy Rotation script that works with ProxyMesh - https://www.reddit.com/r/Python/comments/7n255r/proxy_rotation_script_that_works_with_proxymesh/
+	25. An abstraction helps you refactor your current argparse code - https://www.reddit.com/r/Python/comments/7n2ot8/an_abstraction_helps_you_refactor_your_current/
+	26. Why 9999 is the maximal year, and 1 is minimal in python? - https://www.reddit.com/r/Python/comments/7n2kai/why_9999_is_the_maximal_year_and_1_is_minimal_in/
+	27. [FlameSuit.enable] Help me be more Pythonic - https://www.reddit.com/r/Python/comments/7n2ixt/flamesuitenable_help_me_be_more_pythonic/
 
