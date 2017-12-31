@@ -5,7 +5,7 @@ from email.mime.multipart import  MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-urls = ["http://planetpython.org/rss20.xml", "https://www.reddit.com/r/Python/.rss"]
+urls = ["http://planetpython.org/rss20.xml", "https://www.reddit.com/r/Python/.rss", "http://machinelearningmastery.com/blog/feed/", "http://news.mit.edu/rss/topic/artificial-intelligence2", "http://mlweekly.com/issues.rss"]
 
 def compileLinks(urls):
     links = {}
