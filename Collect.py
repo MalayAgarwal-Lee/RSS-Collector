@@ -49,7 +49,7 @@ def compileFile(links):
 
                     #creating a proper list object
                     string =  soupObject.new_string(details['title'])
-                    newTag = soupObject.new_tag("li", id = str(number))
+                    newTag = soupObject.new_tag("li", id = f'{number}-{title}')
                     newTag.append(soupObject.new_tag('a', href = details['link']))
                     newTag.a.append(string)
                     soupObject.find('ul', id = f'links from {title}').append(newTag)
