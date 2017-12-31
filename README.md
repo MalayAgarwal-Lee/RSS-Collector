@@ -16,3 +16,9 @@ The blogs I used:
 [Planet Python](http://planetpython.org/)
 
 [Python on Reddit](https://www.reddit.com/r/Python/)
+
+[Machine Learning Mastery](machinelearningmastery.com/blog/)
+
+[MIT News - Artificial Intelligence](http://news.mit.edu/topic/artificial-intelligence2)
+
+[Machine Learning Weekly](http://mlweekly.com/)
