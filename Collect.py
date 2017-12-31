@@ -1,5 +1,6 @@
 import feedparser
 import smtplib
+from bs4 import BeautifulSoup
 from email.mime.multipart import  MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
@@ -22,19 +23,40 @@ def compileLinks(urls):
     return links
 
 def compileFile(links):
-    with open('links.txt', 'w') as file:
-        for title, items in links.items():
-            file.write(f'{title}\n')
-            for number, details in items.items():
-                headline = details['title']
-                link = details['link']
-                try:
-                    file.write(f"\t{number}. {headline} - {link}\n")
-                except:
-                    continue
-            file.write("\n")
 
-        return file.name
+    with open('links.html', 'w+') as htmlFile:
+
+        soupObject = BeautifulSoup(htmlFile, 'html5lib')
+        title = soupObject.new_tag("title")
+        title.append("Your Python News For Today!")
+        soupObject.head.append(title)
+        for title, items in links.items():
+
+            #creating header with title of the blog
+            newTag = soupObject.new_tag("h3", id = title)
+            soupObject.body.append(newTag)
+            soupObject.find('h3', id = title).append(f'{title}')
+
+            #creating a list to display the links from RSS
+            newTag = soupObject.new_tag("ul", id = f'links from {title}')
+            soupObject.find('h3', id = title).insert_after(newTag)
+
+            for number, details in items.items():
+
+                #I am avoiding this link as parsing error due to an invalid character
+                #pops up here
+                if details['link'] != 'https://www.codementor.io/edmondatto/build-a-command-line-application-that-consumes-a-public-api-here-s-how-f7hxbuxm2':
+
+                    #creating a proper list object
+                    string =  soupObject.new_string(details['title'])
+                    newTag = soupObject.new_tag("li", id = str(number))
+                    newTag.append(soupObject.new_tag('a', href = details['link']))
+                    newTag.a.append(string)
+                    soupObject.find('ul', id = f'links from {title}').append(newTag)
+
+        #updating the html file
+        htmlFile.write(str(soupObject.prettify()))
+        return htmlFile.name
 
 def mail(filename):
     sender = 'rssfeedlinks1@gmail.com'
