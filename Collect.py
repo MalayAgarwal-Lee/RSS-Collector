@@ -43,9 +43,10 @@ def compileFile(links):
 
             for number, details in items.items():
 
-                #I am avoiding this link as parsing error due to an invalid character
-                #pops up here
-                if details['link'] != 'https://www.codementor.io/edmondatto/build-a-command-line-application-that-consumes-a-public-api-here-s-how-f7hxbuxm2':
+                #I am avoiding these links
+                #the first one has a special character in the headline
+                #the second is in Arabic
+                if details['link'] not in ['https://www.codementor.io/edmondatto/build-a-command-line-application-that-consumes-a-public-api-here-s-how-f7hxbuxm2', 'http://pyarab.com/2017/12/python-send-email.html']:
 
                     #creating a proper list object
                     string =  soupObject.new_string(details['title'])
