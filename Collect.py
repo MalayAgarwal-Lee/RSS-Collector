@@ -5,10 +5,15 @@ from email.mime.multipart import  MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
+#the urls of the blogs I am obtaining the news from
 urls = ["http://planetpython.org/rss20.xml", "https://www.reddit.com/r/Python/.rss", "http://machinelearningmastery.com/blog/feed/", "http://news.mit.edu/rss/topic/artificial-intelligence2", "http://mlweekly.com/issues.rss"]
 
 def compileLinks(urls):
     links = {}
+
+    #creating the dictionary
+    #the dictionary has the following structure:
+    #{'blog-name': {'article number': {'title': <headline>, 'link': <link>}}}
     for url in urls:
         feed = feedparser.parse(url)
         title = feed['feed']['title']
@@ -32,12 +37,12 @@ def compileFile(links):
         soupObject.head.append(title)
         for title, items in links.items():
 
-            #creating header with title of the blog
+            #creating a h3 header tag with title of the blog
             newTag = soupObject.new_tag("h3", id = title)
             soupObject.body.append(newTag)
             soupObject.find('h3', id = title).append(f'{title}')
 
-            #creating a list to display the links from RSS
+            #creating an unordered list to display the links from RSS
             newTag = soupObject.new_tag("ul", id = f'links from {title}')
             soupObject.find('h3', id = title).insert_after(newTag)
 
@@ -46,6 +51,7 @@ def compileFile(links):
                 #I am avoiding these links
                 #the first one has a special character in the headline
                 #the second is in Arabic
+                #they cannot be handled by .write() method
                 if details['link'] not in ['https://www.codementor.io/edmondatto/build-a-command-line-application-that-consumes-a-public-api-here-s-how-f7hxbuxm2', 'http://pyarab.com/2017/12/python-send-email.html']:
 
                     #creating a proper list object
