@@ -22,3 +22,5 @@ The blogs I used:
 [MIT News - Artificial Intelligence](http://news.mit.edu/topic/artificial-intelligence2)
 
 [Machine Learning Weekly](http://mlweekly.com/)
+
+[Machine Learning on Medium](https://medium.com/tag/machine-learning)
