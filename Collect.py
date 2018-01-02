@@ -6,7 +6,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 #the urls of the blogs I am obtaining the news from
-urls = ["http://planetpython.org/rss20.xml", "https://www.reddit.com/r/Python/.rss", "http://machinelearningmastery.com/blog/feed/", "http://news.mit.edu/rss/topic/artificial-intelligence2", "http://mlweekly.com/issues.rss"]
+urls = ["http://planetpython.org/rss20.xml", "https://www.reddit.com/r/Python/.rss", "http://machinelearningmastery.com/blog/feed/", "http://news.mit.edu/rss/topic/artificial-intelligence2", "http://mlweekly.com/issues.rss", "https://medium.com/feed/tag/machine-learning"]
 
 def compileLinks(urls):
     links = {}
