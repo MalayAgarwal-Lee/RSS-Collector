@@ -23,4 +23,4 @@ The blogs I used:
 
 [Machine Learning Weekly](http://mlweekly.com/)
 
-[Machine Learning on Medium](https://medium.com/tag/machine-learning)
+[Towards Data Science](https://towardsdatascience.com/)
