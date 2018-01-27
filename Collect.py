@@ -45,8 +45,8 @@ def compileFile(links):
 
             #creating a h3 header tag with title of the blog
             newTag = soupObject.new_tag("h3", id = title)
+            newTag.append(f'{title}')
             soupObject.body.append(newTag)
-            soupObject.find('h3', id = title).append(f'{title}')
 
             #creating an unordered list to display the links from RSS
             newTag = soupObject.new_tag("ul", id = f'links from {title}')
@@ -65,10 +65,9 @@ def compileFile(links):
                 #avoiding some problematic urls
                 if details['link'] not in avoid:
                     #creating a proper list object
-                    string =  soupObject.new_string(headline)
                     newTag = soupObject.new_tag("li")
                     newTag.append(soupObject.new_tag('a', href = details['link']))
-                    newTag.a.append(string)
+                    newTag.a.append(headline)
                     soupObject.find('ul', id = f'links from {title}').append(newTag)
 
         #updating the html file
