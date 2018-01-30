@@ -6,6 +6,8 @@ Usually, Indian news sources (at least the conventional ones) do not cover topic
 Enter this script. 
 Here, I use the feedparser, smtplib and email modules to create a text file containing content from two Python blogs and mail them to myself. So long, Google dependency!
 
+Other than getting Data Science related news, I also enjoy reading psychological articles on relationships. So, that too is included here.
+
 In the version under the master branch, I compiled the headlines and the links from each blog into a text file. Here, I am compiling them into an HTML file in order to make all the links directly accessible from the file itself. 
 Open the file in a browser and you'll see the utility. 
 
@@ -24,3 +26,5 @@ The blogs I used:
 [Machine Learning Weekly](http://mlweekly.com/)
 
 [Towards Data Science](https://towardsdatascience.com/)
+
+[Pyschology Today - Relationships](https://psychologytoday.com/topics/relationships/)
