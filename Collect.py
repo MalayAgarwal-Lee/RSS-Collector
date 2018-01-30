@@ -55,7 +55,7 @@ class Links(object):
 
 
 #the urls of the blogs I am obtaining the news from
-urls = ["http://planetpython.org/rss20.xml", "https://www.reddit.com/r/Python/.rss", "http://machinelearningmastery.com/blog/feed/", "http://news.mit.edu/rss/topic/artificial-intelligence2", "http://mlweekly.com/issues.rss", "https://towardsdatascience.com/feed/"]
+urls = ["http://planetpython.org/rss20.xml", "https://www.reddit.com/r/Python/.rss", "http://machinelearningmastery.com/blog/feed/", "http://news.mit.edu/rss/topic/artificial-intelligence2", "http://mlweekly.com/issues.rss", "https://towardsdatascience.com/feed/", "https://psychologytoday.com/topics/relationships/feed"]
 
 
 #a generator function which yields urls that need to avoided
@@ -111,6 +111,11 @@ def compileFile(links):
                 emDash = '\u2014'
                 if emDash in headline:
                     headline = headline.replace(emDash, '-', headline.count(emDash))
+
+                #avoiding hair space, cannot be handled by write()
+                hairSpace = '\u200a'
+                if hairSpace in headline:
+                    headline = headline.replace(hairSpace, ' ', headline.count(hairSpace))
 
                 #avoiding some problematic urls
                 if link not in avoid:
