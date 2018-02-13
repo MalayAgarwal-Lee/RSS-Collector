@@ -84,7 +84,7 @@ def compileLinks(urls):
 #a function which creates the HTML file out of the links
 def compileFile(links):
 
-    with open('links.html', 'w+') as htmlFile:
+    with open('links.html', 'w+', encoding = 'utf-8') as htmlFile:
 
         soupObject = BeautifulSoup(htmlFile, 'html5lib')
         title = soupObject.new_tag("title")
@@ -106,16 +106,6 @@ def compileFile(links):
 
             #using the namedtuple to obtain headline, link of each article
             for headline, link in articles.getArticles().values():
-
-                #avoid emDash, cannot be handled by write()
-                emDash = '\u2014'
-                if emDash in headline:
-                    headline = headline.replace(emDash, '-', headline.count(emDash))
-
-                #avoiding hair space, cannot be handled by write()
-                hairSpace = '\u200a'
-                if hairSpace in headline:
-                    headline = headline.replace(hairSpace, ' ', headline.count(hairSpace))
 
                 #avoiding some problematic urls
                 if link not in avoid:
