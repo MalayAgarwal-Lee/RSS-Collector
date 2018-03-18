@@ -13,7 +13,7 @@ ArticleInfo = namedtuple('ArticleInfo', ('headline', 'link'))
 
 class Article(object):
     '''
-    Class containg all articles collected from one in a dictionary
+    Class containg all articles collected from one blog in a dictionary
 
     Attributes:
         articles: Dictionary containing all articles
