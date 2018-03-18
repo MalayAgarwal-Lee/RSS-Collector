@@ -7,50 +7,75 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 
-# a namedtuple representing the structure of an article's info
+# a namedtuple representing an article: headline, link
 ArticleInfo = namedtuple('ArticleInfo', ('headline', 'link'))
 
 
-# a helper class which will contain the dictionary
-# having information about the articles from each blog
 class Article(object):
+    '''
+    Class containg all articles collected from one in a dictionary
+
+    Attributes:
+        articles: Dictionary containing all articles
+    '''
+
     def __init__(self):
+        '''
+        Initializes articles as an empty dictionary
+        '''
         self.articles = {}
 
     def addArticle(self, number, headline, link):
         '''
-        Creates a ArticleInfo namedtuple with headline, link using key 'number'
-        :param number: The article number
-        :param headline: The headline for the article
-        :param link: The link to the article
+        Creates a ArticleInfo instance with (headline, link) using key 'number'
+
+        Argumnets:
+            number: int, The article number
+            headline: str, The headline for the article
+            link: str, The link to the article
         '''
         self.articles[number] = ArticleInfo(headline, link)
 
     def getArticles(self):
         '''
-        This function returns the dictionary containing the articles
+        Returns the dictionary containing the articles
+
+        Returns:
+            A dictionary
         '''
         return self.articles
 
 
-# master class which will contain the main dictionary
-# having all information about the various blogs
 class Links(object):
+    '''
+    Class containing all the articles from all blogs in a dictionary.
+
+    Attributes:
+        blog: A dictionary with key: blog name, value: articles from blog
+    '''
+
     def __init__(self):
+        '''
+        Initializes blog as an empty dictionary
+        '''
         self.blog = {}
 
     def addBlog(self, name):
         '''
-        This function creates an instance of Article() under the key 'name.'
-        :param name: The name of the blog
-        :return: The instance of Article() created
+        Creates an instance of Article() under the key 'name.'
+
+        Arguments:
+            name: str, The name of the blog
+
+        Returns:
+            The instance of Aritcle() created
         '''
         self.blog[name] = Article()
         return self.blog[name]
 
     def getLinks(self):
         '''
-        This function returns the dictionary containing all the information
+        Returns the dictionary containing all the articles
         '''
         return self.blog
 
@@ -67,6 +92,14 @@ urls = ["http://planetpython.org/rss20.xml",
 
 def compileLinks(urls):
     '''
+    Iterates over the blogs
+    Obtains their articles as an instance of Links class
+
+    Arguments:
+        urls: list, the urls of the blogs to be used
+
+    Returns:
+        Instance of Links class containing articles
     '''
 
     # creating a new instance of Links
@@ -83,8 +116,16 @@ def compileLinks(urls):
     return links
 
 
-# a function which creates the HTML file out of the links
 def compileFile(links):
+    '''
+    Function which creates HTML file out of articles from blogs
+
+    Arguments:
+        links: Links instance, containing articles from blogs
+
+    Returns:
+        str, name of the file created
+    '''
 
     with open('links.html', 'w+', encoding='utf-8') as htmlFile:
 
@@ -118,8 +159,13 @@ def compileFile(links):
         return htmlFile.name
 
 
-# a function which emails the created file to an email address
 def mail(filename):
+    '''
+    Function which mails the file to an email address
+
+    Arguments:
+        filename: str, name of the file to be mailed
+    '''
     sender = 'rssfeedlinks1@gmail.com'
     recipient = 'malay.agarwal261016@outlook.com'
     password = 'MakingLifeEasier'
