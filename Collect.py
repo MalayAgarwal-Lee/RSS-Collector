@@ -85,7 +85,7 @@ urls = ["http://planetpython.org/rss20.xml",
         "https://www.reddit.com/r/Python/.rss",
         "http://machinelearningmastery.com/blog/feed/",
         "http://news.mit.edu/rss/topic/artificial-intelligence2",
-        "http://mlweekly.com/issues.rss",
+        "https://mlweekly.com/issues.rss"
         "https://towardsdatascience.com/feed/",
         "https://psychologytoday.com/topics/relationships/feed"]
 
@@ -106,8 +106,13 @@ def compileLinks(urls):
     links = Links()
     for url in urls:
         feed = feedparser.parse(url)
+
         # adding the current blog to the instance
-        blog = links.addBlog(feed['feed']['title'])
+        try:
+            blog = links.addBlog(feed['feed']['title'])
+        except KeyError:
+            print(f'Invalid url: {url}')
+
         number = 1
         for entry in feed['entries']:
             # adding the current article to the instance
@@ -183,7 +188,8 @@ def mail(filename):
     attachmentPart = MIMEBase('application', 'octet-stream')
     attachmentPart.set_payload(attachment.read())
     encoders.encode_base64(attachmentPart)
-    attachmentPart.add_header('content-disposition', 'attachment', filename=filename)
+    attachmentPart.add_header('content-disposition',
+                              'attachment', filename=filename)
 
     message.attach(attachmentPart)
     message = message.as_string()
