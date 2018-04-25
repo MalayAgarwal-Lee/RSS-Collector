@@ -85,7 +85,7 @@ urls = ["http://planetpython.org/rss20.xml",
         "https://www.reddit.com/r/Python/.rss",
         "http://machinelearningmastery.com/blog/feed/",
         "http://news.mit.edu/rss/topic/artificial-intelligence2",
-        "https://mlweekly.com/issues.rss"
+        "https://mlweekly.com/issues.rss",
         "https://towardsdatascience.com/feed/",
         "https://psychologytoday.com/topics/relationships/feed"]
 
