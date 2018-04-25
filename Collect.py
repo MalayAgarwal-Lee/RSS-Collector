@@ -111,7 +111,7 @@ def compileLinks(urls):
         try:
             blog = links.addBlog(feed['feed']['title'])
         except KeyError:
-            print(f'Invalid url: {url}')
+            print(f'Invalid url: {url}\n')
 
         number = 1
         for entry in feed['entries']:
