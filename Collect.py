@@ -182,16 +182,17 @@ def mail(filename):
     message['To'] = recipient
     message['Subject'] = subject
 
-    attachment = open(filename, 'rb')
+    with open(filename, 'rb') as attachment:
 
-    # constructing attachment
-    attachmentPart = MIMEBase('application', 'octet-stream')
-    attachmentPart.set_payload(attachment.read())
-    encoders.encode_base64(attachmentPart)
-    attachmentPart.add_header('content-disposition',
-                              'attachment', filename=filename)
+        # constructing attachment
+        attachmentPart = MIMEBase('application', 'octet-stream')
+        attachmentPart.set_payload(attachment.read())
+        encoders.encode_base64(attachmentPart)
+        attachmentPart.add_header('content-disposition',
+                                  'attachment', filename=filename)
 
-    message.attach(attachmentPart)
+        message.attach(attachmentPart)
+
     message = message.as_string()
 
     # connecting to server
