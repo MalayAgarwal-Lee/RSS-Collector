@@ -113,11 +113,9 @@ def compileLinks(urls):
         except KeyError:
             print(f'Invalid url: {url}\n')
 
-        number = 1
-        for entry in feed['entries']:
+        for count, entry in enumerate(feed['entries'], 1):
             # adding the current article to the instance
-            blog.addArticle(number, entry['title'], entry['link'])
-            number += 1
+            blog.addArticle(count, entry['title'], entry['link'])
     return links
 
 
