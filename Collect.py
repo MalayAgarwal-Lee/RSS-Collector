@@ -25,7 +25,7 @@ class Article(object):
         '''
         self.articles = {}
 
-    def addArticle(self, number, headline, link):
+    def add_article(self, number, headline, link):
         '''
         Creates a ArticleInfo instance with (headline, link) using key 'number'
 
@@ -36,7 +36,7 @@ class Article(object):
         '''
         self.articles[number] = ArticleInfo(headline, link)
 
-    def getArticles(self):
+    def get_articles(self):
         '''
         Returns the dictionary containing the articles
 
@@ -60,7 +60,7 @@ class Links(object):
         '''
         self.blog = {}
 
-    def addBlog(self, name):
+    def add_blog(self, name):
         '''
         Creates an instance of Article() under the key 'name.'
 
@@ -73,7 +73,7 @@ class Links(object):
         self.blog[name] = Article()
         return self.blog[name]
 
-    def getLinks(self):
+    def get_links(self):
         '''
         Returns the dictionary containing all the articles
         '''
@@ -90,7 +90,7 @@ urls = ["http://planetpython.org/rss20.xml",
         "https://psychologytoday.com/topics/relationships/feed"]
 
 
-def compileLinks(urls):
+def compile_links(urls):
     '''
     Iterates over the blogs
     Obtains their articles as an instance of Links class
@@ -109,17 +109,17 @@ def compileLinks(urls):
 
         # adding the current blog to the instance
         try:
-            blog = links.addBlog(feed['feed']['title'])
+            blog = links.add_blog(feed['feed']['title'])
         except KeyError:
             print(f'Invalid url: {url}\n')
 
         for count, entry in enumerate(feed['entries'], 1):
             # adding the current article to the instance
-            blog.addArticle(count, entry['title'], entry['link'])
+            blog.add_article(count, entry['title'], entry['link'])
     return links
 
 
-def compileFile(links):
+def compile_file(links):
     '''
     Function which creates HTML file out of articles from blogs
 
@@ -130,36 +130,36 @@ def compileFile(links):
         str, name of the file created
     '''
 
-    with open('links.html', 'w+', encoding='utf-8') as htmlFile:
+    with open('links.html', 'w+', encoding='utf-8') as html_file:
 
-        soupObject = BeautifulSoup(htmlFile, 'html5lib')
-        title = soupObject.new_tag("title")
+        soup_object = BeautifulSoup(html_file, 'html5lib')
+        title = soup_object.new_tag("title")
         title.append("Your Python News For Today!")
-        soupObject.head.append(title)
+        soup_object.head.append(title)
 
         for title, articles in links.items():
 
             # creating a h3 header tag with title of the blog
-            newTag = soupObject.new_tag("h3", id=title)
-            newTag.append(f'{title}')
-            soupObject.body.append(newTag)
+            new_tag = soup_object.new_tag("h3", id=title)
+            new_tag.append(f'{title}')
+            soup_object.body.append(new_tag)
 
             # creating an unordered list to display the links from RSS
-            newTag = soupObject.new_tag("ul", id=f'links from {title}')
-            soupObject.find('h3', id=title).insert_after(newTag)
+            new_tag = soup_object.new_tag("ul", id=f'links from {title}')
+            soup_object.find('h3', id=title).insert_after(new_tag)
 
             # using the namedtuple to obtain headline, link of each article
-            for headline, link in articles.getArticles().values():
+            for headline, link in articles.get_articles().values():
 
                 # creating a proper list object
-                newTag = soupObject.new_tag("li")
-                newTag.append(soupObject.new_tag('a', href=link))
-                newTag.a.append(headline)
-                soupObject.find('ul', id=f'links from {title}').append(newTag)
+                new_tag = soup_object.new_tag("li")
+                new_tag.append(soup_object.new_tag('a', href=link))
+                new_tag.a.append(headline)
+                soup_object.find('ul', id=f'links from {title}').append(new_tag)
 
         # updating the html file
-        htmlFile.write(str(soupObject.prettify()))
-        return htmlFile.name
+        html_file.write(str(soup_object.prettify()))
+        return html_file.name
 
 
 def mail(filename):
@@ -183,13 +183,13 @@ def mail(filename):
     attachment = open(filename, 'rb')
 
     # constructing attachment
-    attachmentPart = MIMEBase('application', 'octet-stream')
-    attachmentPart.set_payload(attachment.read())
-    encoders.encode_base64(attachmentPart)
-    attachmentPart.add_header('content-disposition',
+    attachment_part = MIMEBase('application', 'octet-stream')
+    attachment_part.set_payload(attachment.read())
+    encoders.encode_base64(attachment_part)
+    attachment_part.add_header('content-disposition',
                               'attachment', filename=filename)
 
-    message.attach(attachmentPart)
+    message.attach(attachment_part)
     message = message.as_string()
 
     # connecting to server
@@ -203,8 +203,8 @@ def mail(filename):
 
 
 def main():
-    links = compileLinks(urls)
-    filename = compileFile(links.getLinks())
+    links = compile_links(urls)
+    filename = compile_file(links.get_links())
     mail(filename)
     print("Finished")
 
